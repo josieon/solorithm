@@ -12,6 +12,7 @@ class Solution {
     public boolean update(int m, int n){
         int cnt = 0;
         boolean[][] isChecked = new boolean[m][n];
+        // 제거 가능한 블록 체크
         for(int i = 0; i < m - 1; i++){
             for(int j = 0; j < n - 1; j++){
                 if(map[i][j] == '#')
@@ -25,6 +26,7 @@ class Solution {
                 }
             }
         }
+        // 블록 제거하고 블록 떨어뜨리기
         for(int j = 0; j < n; j++){
             Queue<Integer> queue = new LinkedList();
             for(int i = m-1; i >= 0; i--){
