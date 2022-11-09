@@ -2,6 +2,12 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17681) 
 
+### 다른 사람의 풀이
+
+Point 1 : OR 연산으로 Binary연산을 수행함
+Point 2 : 최대 길이인 16으로 문자열을 할당해놓고 substring으로 잘라버림(연산속도 우수)
+Point 3 : replaceAll 최대 길이로 문자열을 할당해놓았기 때문에 공백이 자연스레 채워져있음(기본 메소드들의 특징을 잘 파악하고 있는 풀이이다)
+
 ### 성능 요약
 
 메모리: 83.7 MB, 시간: 3.02 ms
